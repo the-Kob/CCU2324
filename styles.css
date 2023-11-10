@@ -8,20 +8,40 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    text-align: center;
 }
 
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul {
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-li {
-    margin-bottom: 0.5rem;
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Set a specific color for visited links */
+nav a:visited {
+    color: #fff;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff;
 }
