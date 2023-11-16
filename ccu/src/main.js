@@ -16,14 +16,9 @@ const routes = [
         component: Home 
     },
     { 
-        path: '/deliverables', 
+        path: '/deliverables',
+        name: 'deliverables',
         component: Deliverables,
-        children: [
-            {
-                path: ':id',
-                component: Deliverable,
-            },
-        ]
     },
     { 
         path: '/weekly-reports', 

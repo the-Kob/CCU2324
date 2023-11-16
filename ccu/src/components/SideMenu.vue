@@ -18,7 +18,6 @@ methods: {
         return `#report-${index}`;
     },
     handleReportClick(reportId) {
-        console.log('Handling report click:', reportId);
         this.$emit('report-click', reportId);
     },
 },

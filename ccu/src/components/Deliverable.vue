@@ -1,32 +1,26 @@
 <template>
-    <div class="drawer">
-      <div class="drawer-content">
-        <img :src="imageSrc" :alt="`Deliverable ${index + 1}`" @click="openPage(pageLink)">
-      </div>
-      <div class="download-button">
-        <a :href="downloadLink" download>Download</a>
-      </div>
+  <div class="drawer">
+    <div class="drawer-content">
+      <img :src="imageSrc" :alt="altText" />
     </div>
-  </template>
-  
-  <script>
-    export default {
-        name: 'Deliverable',
-        props: {
-        imageSrc: String,
-        pageLink: String,
-        downloadLink: String,
-        },
-        methods: {
-        openPage(link) {
-            // Implement your openPage logic if needed
-            // You may want to use Vue Router for navigation
-        },
-        },
-    };
-  </script>
-  
-  <style scoped>
-  /* Add your styles from styles.css here */
-  </style>
-  
+    <div class="download-button">
+      <a :href="downloadLink" download>Download</a>
+    </div>
+    <p>{{ description }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Deliverable',
+  props: {
+    imageSrc: String,
+    downloadLink: String,
+    description: String,
+  },
+};
+</script>
+
+<style scoped>
+/* Add your styles from styles.css here */
+</style>

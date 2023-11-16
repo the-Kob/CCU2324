@@ -41,6 +41,10 @@ export default {
                     title: 'Week 4', 
                     content: loremIpsum
                 },
+                {
+                    title: '',
+                    content: ''
+                }
             ],
             activeReports: [],
         };
@@ -50,8 +54,6 @@ export default {
             return `#report-${index}`;
         },
         toggleReport(reportId) {
-            console.log('Toggling report:', reportId);
-
             const index = this.activeReports.indexOf(reportId);
 
             if (index !== -1) {
@@ -61,8 +63,6 @@ export default {
                 // Report is not active, add it
                 this.activeReports.push(reportId);
             }
-
-            console.log('Active Reports:', this.activeReports);
         },
         isReportCollapsed(reportId) {
             return this.activeReports.indexOf(reportId) === -1;
