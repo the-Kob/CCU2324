@@ -2,11 +2,12 @@
 <template>
 <div class="report-container">
     <div class="report-box" :class="{ 'collapsed': isCollapsed }" @click="toggleCollapse">
-        <div class="divider" :style="getDividerStyle"></div>
+        
         <div class="title">{{ report.title }}</div>
         <div class="content" :style="getContentStyle">
             <p>{{ report.content }}</p>
         </div>
+        
     </div>
 </div>
 </template>
@@ -28,11 +29,6 @@ export default {
                 transition: 'max-height 0.3s ease-in-out, opacity 0.3s ease-in-out',
             };
         },
-        getDividerStyle() {
-            return {
-                transition: this.isCollapsed ? 'transform 0.3s ease-in-out 0.3s' : 'transform 0.3s ease-in-out',
-            };
-        },
     },
 };
 </script>
@@ -50,7 +46,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   width: 80%;
   cursor: pointer;
   position: relative;
@@ -58,8 +53,8 @@ export default {
 
 .title {
   font-weight: bold;
+  margin-top: 10px;
   margin-bottom: 10px;
-  margin-top: 20px;
 }
 
 .divider {

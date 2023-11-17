@@ -1,26 +1,35 @@
 <template>
-<aside class="side-menu">
+  <aside class="side-menu">
     <ul>
-    <li v-for="(report, index) in reports" :key="index">
-        <router-link :to="getReportPath(index + 1)" class="menu-item" @click="handleReportClick(index + 1)">
-          {{ report.title }}
+      <li v-for="(item, index) in items" :key="index">
+        <router-link :to="getItemPath(index + 1)" class="menu-item" @click="handleItemClick(index + 1)">
+          {{ item.title }}
         </router-link>
-    </li>
+      </li>
     </ul>
-</aside>
+  </aside>
 </template>
 
 <script>
 export default {
-props: ['reports', 'activeReports'],
-methods: {
-    getReportPath(index) {
-        return `#report-${index}`;
+  props: {
+    items: {
+      type: Array,
+      required: true,
     },
-    handleReportClick(reportId) {
-        this.$emit('report-click', reportId);
+    itemKey: {
+      type: String,
+      default: 'item',
     },
-},
+  },
+  methods: {
+    getItemPath(index) {
+      return `#${this.itemKey}-${index}`;
+    },
+    handleItemClick(itemId) {
+      this.$emit('item-click', itemId);
+    },
+  },
 };
 </script>
 

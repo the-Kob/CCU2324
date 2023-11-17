@@ -1,15 +1,18 @@
 <template>
     <div class="weekly-reports-container">
-        <SideMenu :reports="reports" :activeReports="activeReports" @report-click="toggleReport"/>
-        <main>
-            <h2>Weekly Reports</h2>
-            <p>Explore our weekly reports and stay up-to-date with our activities.</p>
-            <div v-for="(report, index) in reports" :key="index" :id="`report-${index + 1}`">
-                <Report :report="report" :fullPath="getReportPath(index + 1)" :isCollapsed="isReportCollapsed(index + 1)" @toggle-collapse="toggleReport(index + 1)"/>
-            </div>
-        </main>
+      <SideMenu :items="reports" :item-key="'report'" @item-click="toggleReport" />
+      <main>
+        <div class="divider"></div>
+        <div v-for="(report, index) in reports" :key="index" :id="`report-${index + 1}`">
+          <Report :report="report" 
+          :fullPath="getReportPath(index + 1)" 
+          :isCollapsed="isReportCollapsed(index + 1)" 
+          @toggle-collapse="toggleReport(index + 1)" />
+          <div class="divider" :style="getDividerStyle(index + 1)"></div>
+        </div>
+      </main>
     </div>
-</template>
+  </template>
 
 <script>
 import Report from '@/components/Report.vue';
@@ -41,10 +44,6 @@ export default {
                     title: 'Week 4', 
                     content: loremIpsum
                 },
-                {
-                    title: '',
-                    content: ''
-                }
             ],
             activeReports: [],
         };
@@ -67,14 +66,19 @@ export default {
         isReportCollapsed(reportId) {
             return this.activeReports.indexOf(reportId) === -1;
         },
+        getDividerStyle(reportId) {
+            return {
+                transition: this.isReportCollapsed(reportId) ? 'transform 0.3s ease-in-out 0.3s' : 'transform 0.3s ease-in-out',
+            };
+        },
     },
     mounted() {
         this.$router.afterEach((to, from) => {
             if (to.hash) {
             const element = document.getElementById(to.hash.slice(1));
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         });
     },
@@ -89,6 +93,7 @@ export default {
 main {
   margin-left: 20px;
   flex: 1; /* Use flex to take up remaining space */
+  margin-top: 20px;
 }
 
 .report-wrapper {
@@ -100,10 +105,18 @@ main {
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 .report-preview:hover {
   background-color: #f0f0f0;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  transform-origin: center top;
 }
 </style>
   

@@ -1,16 +1,15 @@
 <template>
   <div class="weekly-reports-container">
-    <SideMenu :reports="deliverables" @report-click="navigateToDeliverable" />
+    <SideMenu :items="deliverables" :item-key="'deliverable'" @item-click="navigateToDeliverable" />
     <main>
-      <h2>Deliverables</h2>
-      <div v-for="(deliverable, index) in deliverables" :key="index" class="report-wrapper">
+      <div v-for="(deliverable, index) in deliverables" :key="index" :id="`deliverable-${index + 1}`">
         <Deliverable
+          :deliverable="deliverable"
+          :fullPath="getDeliverablePath(index + 1)"
           :imageSrc="deliverable.imageSrc"
           :downloadLink="deliverable.downloadLink"
           :description="deliverable.description"
         />
-        <!-- Add a divider at the end of each deliverable -->
-        <div v-if="isLastDeliverable(index)" class="report-divider"></div>
       </div>
     </main>
   </div>
@@ -21,7 +20,6 @@ import Deliverable from '@/components/Deliverable.vue';
 import SideMenu from '@/components/SideMenu.vue';
 
 export default {
-  name: 'Deliverables',
   components: {
     Deliverable,
     SideMenu,
@@ -92,20 +90,24 @@ export default {
           content: 'Content for Deliverable 1.',
           description: 'Description for Deliverable 1.',
         },
-        // Add more deliverables as needed
       ],
     };
   },
   methods: {
-    isLastDeliverable(index) {
-      return index === this.deliverables.length - 1;
-    },
-    navigateToDeliverable(deliverable) {
-      // Implement your logic for navigating to a specific deliverable
-      // You can use Vue Router for navigation or any other method you prefer
-      console.log('Navigating to deliverable:', deliverable);
+    getDeliverablePath(index) {
+      return `#deliverable-${index}`;
     },
   },
+  mounted() {
+        this.$router.afterEach((to, from) => {
+            if (to.hash) {
+            const element = document.getElementById(to.hash.slice(1));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+            }
+        });
+    },
 };
 </script>
 
