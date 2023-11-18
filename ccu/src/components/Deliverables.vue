@@ -28,66 +28,20 @@ export default {
     return {
       deliverables: [
         {
-          imageSrc: '@/assets/deliverable-1.png',
           downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
           title: 'Deliverable 1',
-          content: 'Content for Deliverable 1.',
-          description: 'Description for Deliverable 1.',
-        },
-        {
-          imageSrc: '@/assets/deliverable-1.png',
-          downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
-          title: 'Deliverable 1',
-          content: 'Content for Deliverable 1.',
-          description: 'Description for Deliverable 1.',
-        },
-        {
-          imageSrc: '@/assets/deliverable-1.png',
-          downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
-          title: 'Deliverable 1',
-          content: 'Content for Deliverable 1.',
-          description: 'Description for Deliverable 1.',
-        },
-        {
-          imageSrc: '@/assets/deliverable-1.png',
-          downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
-          title: 'Deliverable 1',
-          content: 'Content for Deliverable 1.',
-          description: 'Description for Deliverable 1.',
-        },
-        {
-          imageSrc: '@/assets/deliverable-1.png',
-          downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
-          title: 'Deliverable 1',
-          content: 'Content for Deliverable 1.',
-          description: 'Description for Deliverable 1.',
-        },
-        {
-          imageSrc: '@/assets/deliverable-1.png',
-          downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
-          title: 'Deliverable 1',
-          content: 'Content for Deliverable 1.',
-          description: 'Description for Deliverable 1.',
-        },
-        {
-          imageSrc: '@/assets/deliverable-1.png',
-          downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
-          title: 'Deliverable 1',
-          content: 'Content for Deliverable 1.',
-          description: 'Description for Deliverable 1.',
-        },
-        {
-          imageSrc: '@/assets/deliverable-1.png',
-          downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
-          title: 'Deliverable 1',
-          content: 'Content for Deliverable 1.',
-          description: 'Description for Deliverable 1.',
-        },
-        {
-          imageSrc: '@/assets/deliverable-1.png',
-          downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
-          title: 'Deliverable 1',
-          content: 'Content for Deliverable 1.',
+          content: [
+            {
+              type: 'image',
+              src: '@/assets/deliverable-1.png',
+              alt: 'Image 1',
+            },
+            {
+              type: 'video',
+              videoSrc: 'https://www.youtube.com/embed/djV11Xbc914',
+            },
+            // Add more content types as needed
+          ],
           description: 'Description for Deliverable 1.',
         },
       ],

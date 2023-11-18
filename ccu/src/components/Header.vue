@@ -6,7 +6,6 @@
         <ul>
         <li><router-link to="/deliverables">Deliverables</router-link></li>
         <li><router-link to="/weekly-reports">Weekly Reports</router-link></li>
-        <li><router-link to="/about-us">About Us</router-link></li>
         </ul>
     </nav>
     </div>
