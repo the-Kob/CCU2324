@@ -1,7 +1,7 @@
 <template>
 <header>
     <div class="header-container">
-    <h1 class="logo"><router-link to="/">CCU 23/24</router-link></h1>
+    <h1 class="logo"><router-link to="/CCU2324/">CCU 23/24</router-link></h1>
     <nav>
         <ul>
         <li><router-link to="/deliverables">Deliverables</router-link></li>
