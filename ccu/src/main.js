@@ -9,7 +9,7 @@ import WeeklyReports from '@/components/WeeklyReports.vue'
 
 const routes = [
     { 
-        path: '/', 
+        path: '/CCU2324/', 
         component: Home 
     },
     { 
