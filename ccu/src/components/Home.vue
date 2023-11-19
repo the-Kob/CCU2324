@@ -12,7 +12,9 @@
 
     <div class="image-section">
       <div v-for="(image, index) in images" :key="index" class="image-item">
-        <img :src="require(`@/assets/${image.src}`)" :alt="image.alt" />
+        <div class="image-wrapper">
+          <img :src="require(`@/assets/${image.src}`)" :alt="image.alt" />
+        </div>
         <div class="image-caption">
           <h3>{{ image.title }}</h3>
           <p>{{ image.subtitle }}</p>
@@ -33,15 +35,15 @@ export default {
     return {
       images: [
         {
-          src: "placeholder-face.webp",
+          src: "josselin-le-tarnec.jpg",
           alt: "Image 1",
-          title: "Josselin",
+          title: "Josselin Le Tarnec",
           subtitle: "Project Manager",
         },
         {
-          src: "placeholder-face.webp",
+          src: "joao-pestana.jpg",
           alt: "Image 1",
-          title: "Title 1",
+          title: "João Pestana",
           subtitle: "User Research Lead",
         },
         {
@@ -53,7 +55,7 @@ export default {
         {
           src: "placeholder-face.webp",
           alt: "Image 1",
-          title: "Title 1",
+          title: "Bruno Mateus",
           subtitle: "Front-end Developer",
         },
         {
@@ -62,7 +64,6 @@ export default {
           title: "Guilherme Pereira",
           subtitle: "Back-end Developer",
         },
-        // Add other images
       ],
     };
   },
@@ -85,6 +86,7 @@ h2, h3 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .image-item {
@@ -94,7 +96,7 @@ h2, h3 {
 
 img {
   max-width: 100%;
-  max-height: 200px; /* Adjust the maximum height as needed */
+  max-height: 200px;
   height: auto;
 }
 

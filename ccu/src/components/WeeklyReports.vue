@@ -30,7 +30,11 @@ export default {
             reports: [
                 { 
                     title: 'Week 1', 
-                    content: "Throughout this week, our team had the chance to break the ice and get to know each other, especially considering that it was the first meeting for most of us. Roles were defined, and we worked on assigning tasks among the team members.\n\nIn our initial lab class, we focused on crafting our Hunt statement and honing in on the tasks and target audience for our chatbot. After some discussion, we settled on students and identified tasks related to budgeting and inflation, believing these topics would be particularly relevant for our chosen demographic. Additionally, we mapped out a user research plan based on initial interviews, setting the stage for defining our personas in the upcoming stages of our project."
+                    content: [
+                      "Throughout this week, our team had the chance to break the ice and get to know each other, especially considering that it was the first meeting for most of us. Roles were defined, and we worked on assigning tasks among the team members.",
+                      "In our initial lab class, we focused on crafting our Hunt statement and honing in on the tasks and target audience for our chatbot. After some discussion, we settled on students and identified tasks related to budgeting and inflation, believing these topics would be particularly relevant for our chosen demographic.",
+                      "Additionally, we mapped out a user research plan based on initial interviews, setting the stage for defining our personas in the upcoming stages of our project."
+                    ]
                 }
             ],
             activeReports: [],

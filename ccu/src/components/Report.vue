@@ -2,10 +2,11 @@
 <template>
 <div class="report-container">
     <div class="report-box" :class="{ 'collapsed': isCollapsed }" @click="toggleCollapse">
-        
         <div class="title">{{ report.title }}</div>
         <div class="content" :style="getContentStyle">
-            <p>{{ report.content }}</p>
+            <div v-for="(paragraph, index) in report.content" :key="index">
+                <p>{{ paragraph }}</p>
+            </div>
         </div>
         
     </div>
