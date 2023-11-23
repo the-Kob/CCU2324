@@ -16,7 +16,7 @@
 
     </div>
     <div class="download-button">
-      <a :href="deliverable.downloadLink" download>Download</a>
+      <a :href="deliverable.downloadLink" download class="download-link">Download</a>
     </div>
   </div>
 </template>
@@ -50,6 +50,21 @@ export default {
 
 .download-button {
   margin-top: 10px;
+  text-align: center;
+}
+
+.download-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; /* Use your desired background color */
+  color: #fff; /* Set text color to contrast with the background */
+  text-decoration: none;
+  border-radius: 5px; /* Adjust the border-radius as needed */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.download-link:hover {
+  background-color: #2980b9; /* Change the background color on hover */
 }
 
 </style>

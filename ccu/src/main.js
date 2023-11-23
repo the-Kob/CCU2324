@@ -13,12 +13,12 @@ const routes = [
         component: Home 
     },
     { 
-        path: '/deliverables',
+        path: '/CCU2324/deliverables',
         name: 'deliverables',
         component: Deliverables,
     },
     { 
-        path: '/weekly-reports', 
+        path: '/CCU2324/weekly-reports', 
         name: 'weekly-reports',
         component: WeeklyReports,
     },

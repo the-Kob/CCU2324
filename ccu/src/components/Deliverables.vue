@@ -28,21 +28,15 @@ export default {
     return {
       deliverables: [
         {
-          downloadLink: 'https://drive.google.com/uc?export=download&id=18S066VhIl_Nupqqy1iQlp4o-XNkX5qeh',
-          title: 'Deliverable 1',
+          downloadLink: 'https://drive.google.com/uc?export=download&id=1hZIalFCUhMPqXQyKFooWStqXVVa2JYwj',
+          title: 'Assigment 1',
           content: [
             {
-              type: 'image',
-              src: '@/assets/deliverable-1.png',
-              alt: 'Image 1',
-            },
-            {
               type: 'video',
-              videoSrc: 'https://www.youtube.com/embed/djV11Xbc914',
+              videoSrc: 'https://www.youtube.com/embed/twujtwxRvx4',
             },
-            // Add more content types as needed
           ],
-          description: 'Description for Deliverable 1.',
+          description: 'Please download the presentation slides below.',
         },
       ],
     };
