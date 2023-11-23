@@ -4,10 +4,11 @@
       <h2>Welcome!</h2>
       <p>
         This is our website for the CCU course taught @ Instituto Superior Técnico by professors
-        <a href="https://nunojnunes.notion.site/Nuno-Jardim-Nunes-a5a4a2fe6d944d03ac757d3261e64863" target="_blank">Nuno Jardim Nunes</a> and
-        <a href="https://web.tecnico.ulisboa.pt/filipa.rocha/" target="_blank">Filipa Rocha</a>.
+        <strong><a href="https://nunojnunes.notion.site/Nuno-Jardim-Nunes-a5a4a2fe6d944d03ac757d3261e64863" target="_blank">Nuno Jardim Nunes</a></strong> and
+        <strong><a href="https://web.tecnico.ulisboa.pt/filipa.rocha/" target="_blank">Filipa Rocha</a></strong>.
       </p>
-      <p>We are a group of 5 students, and these are our roles within our team:</p>
+      <h3>Who are we?</h3>
+      <p>We are the <strong>Budget Brigade</strong>, a group of 5 students, and these are our roles within our team:</p>
     </div>
 
     <div class="image-section">
