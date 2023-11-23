@@ -10,7 +10,6 @@
       <h3>Who are we?</h3>
       <p>We are the <strong>Budget Brigade</strong>, a group of 5 students, and these are our roles within our team:</p>
     </div>
-
     <div class="image-section">
       <div v-for="(image, index) in images" :key="index" class="image-item">
         <div class="image-wrapper">
