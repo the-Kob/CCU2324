@@ -35,6 +35,23 @@ export default {
                       "In our initial lab class, we focused on crafting our Hunt statement and honing in on the tasks and target audience for our chatbot. After some discussion, we settled on students and identified tasks related to budgeting and inflation, believing these topics would be particularly relevant for our chosen demographic.",
                       "Additionally, we mapped out a user research plan based on initial interviews, setting the stage for defining our personas in the upcoming stages of our project."
                     ]
+                },
+                { 
+                    title: 'Week 2', 
+                    content: [
+                      "In this week, the team embarked on the process of addressing challenges depicted in the storyboards through a comprehensive brainstorming session.",
+                      "Ideas generated during this brainstorming were then organized into a mind map, forming cohesive groups. Once specific ideas were selected, they were further developed and illustrated through new storyboards, envisioning user interactions with the system and proposing solutions to financial issues.",
+                    ]
+                },
+                { 
+                    title: 'Week 3', 
+                    content: [
+                      "Moving into this week, individual team members independently selected storyboards based on thematic groupings.",
+                      "The team collectively envisioned the potential features of the application by sketching screens and integrating these diverse ideas.",
+                      "This amalgamation of concepts served as the foundation for the creation of a Low-Fidelity prototype. Tasks that users might perform were envisioned to anticipate the ways in which the app could assist them.",
+                      "Utilizing paper and post-it notes, a prototype was crafted to enable user interaction. Subsequent user evaluations were conducted using the Wizard of Oz and Think Aloud methods, providing valuable insights for improvement.",
+                      "Once potential issues were identified, the team transitioned to Figma to develop the Mid-Fidelity prototype, incorporating refined design elements and enhanced functionality.",
+                    ]
                 }
             ],
             activeReports: [],

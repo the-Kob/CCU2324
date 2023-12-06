@@ -35,25 +35,25 @@ export default {
     return {
       images: [
         {
-          src: "josselin-le-tarnec.jpg",
+          src: "josselin-le-tarnec.png",
           alt: "Image 1",
           title: "Josselin Le Tarnec",
           subtitle: "Project Manager",
         },
         {
-          src: "joao-pestana.jpg",
+          src: "joao-pestana.png",
           alt: "Image 1",
           title: "João Pestana",
           subtitle: "User Research Lead",
         },
         {
-          src: "placeholder-face.webp",
+          src: "gustavo-rocha.png",
           alt: "Image 1",
           title: "Gustavo Rocha",
           subtitle: "Design Lead",
         },
         {
-          src: "placeholder-face.webp",
+          src: "bruno-mateus.png",
           alt: "Image 1",
           title: "Bruno Mateus",
           subtitle: "Front-end Developer",

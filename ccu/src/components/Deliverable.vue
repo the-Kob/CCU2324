@@ -1,7 +1,9 @@
 <template>
   <div class="drawer">
     <h2>{{ deliverable.title }}</h2>
-    <p>{{ deliverable.description }}</p>
+    <div v-for="(paragraph, descriptionIndex) in deliverable.description" :key="descriptionIndex">
+      <p class="justified-text">{{ paragraph }}</p>
+    </div>
     <div class="drawer-content">
       <div v-for="(content, contentIndex) in deliverable.content" :key="contentIndex">
         <template v-if="content.type === 'video'">
@@ -65,6 +67,10 @@ export default {
 
 .download-link:hover {
   background-color: #2980b9; /* Change the background color on hover */
+}
+
+.justified-text {
+  text-align: justify;
 }
 
 </style>

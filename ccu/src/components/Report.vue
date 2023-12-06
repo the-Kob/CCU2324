@@ -5,7 +5,7 @@
         <div class="title">{{ report.title }}</div>
         <div class="content" :style="getContentStyle">
             <div v-for="(paragraph, index) in report.content" :key="index">
-                <p>{{ paragraph }}</p>
+                <p class="justified-text">{{ paragraph }}</p>
             </div>
         </div>
         
@@ -63,6 +63,10 @@ export default {
   height: 1px;
   background-color: #ccc;
   transform-origin: center top;
+}
+
+.justified-text {
+  text-align: justify;
 }
 </style>
   

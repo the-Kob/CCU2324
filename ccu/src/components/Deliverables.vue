@@ -36,7 +36,22 @@ export default {
               videoSrc: 'https://www.youtube.com/embed/twujtwxRvx4',
             },
           ],
-          description: 'Please download the presentation slides below.',
+          description: [
+            'Please download the presentation slides below.',
+          ]
+        },
+        {
+          downloadLink: 'https://drive.google.com/uc?export=download&id=1CvFMlvJjA_7Bamc92GB_ppRpJclGaCeI',
+          title: 'Assigment 2',
+          content: [
+            {
+              type: 'video',
+              videoSrc: 'https://www.youtube.com/embed/xHXTcI-c428',
+            },
+          ],
+          description: [
+            'Please download the presentation slides below.',
+          ]
         },
       ],
     };
