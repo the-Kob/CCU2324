@@ -1,36 +1,16 @@
 <!-- Report.vue -->
 <template>
 <div class="report-container">
-    <div class="report-box" :class="{ 'collapsed': isCollapsed }" @click="toggleCollapse">
+    <div class="report-box">
         <div class="title">{{ report.title }}</div>
-        <div class="content" :style="getContentStyle">
-            <div v-for="(paragraph, index) in report.content" :key="index">
-                <p class="justified-text">{{ paragraph }}</p>
-            </div>
-        </div>
-        
+        <div class="content" v-html="report.content"></div>
     </div>
 </div>
 </template>
 
 <script>
 export default {
-    props: ['report', 'isCollapsed'],
-    methods: {
-        toggleCollapse() {
-            this.$emit('toggle-collapse');
-        },
-    },
-    computed: {
-        getContentStyle() {
-            return {
-                maxHeight: this.isCollapsed ? '0' : '300px',
-                opacity: this.isCollapsed ? '0' : '1',
-                overflow: this.isCollapsed ? 'hidden' : 'visible',
-                transition: 'max-height 0.3s ease-in-out, opacity 0.3s ease-in-out',
-            };
-        },
-    },
+    props: ['report'],
 };
 </script>
 

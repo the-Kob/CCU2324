@@ -5,7 +5,7 @@
     <nav>
         <ul>
         <li><router-link to="/CCU2324/deliverables">Deliverables</router-link></li>
-        <li><router-link to="/CCU2324/weekly-reports">Weekly Reports</router-link></li>
+        <li><router-link to="/CCU2324/weekly-reports">Assignment Reports</router-link></li>
         </ul>
     </nav>
     </div>

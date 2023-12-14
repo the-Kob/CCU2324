@@ -29,7 +29,7 @@ export default {
       deliverables: [
         {
           downloadLink: 'https://drive.google.com/uc?export=download&id=1hZIalFCUhMPqXQyKFooWStqXVVa2JYwj',
-          title: 'Assigment 1',
+          title: 'Assignment 1',
           content: [
             {
               type: 'video',
@@ -42,7 +42,7 @@ export default {
         },
         {
           downloadLink: 'https://drive.google.com/uc?export=download&id=1CvFMlvJjA_7Bamc92GB_ppRpJclGaCeI',
-          title: 'Assigment 2',
+          title: 'Assignment 2',
           content: [
             {
               type: 'video',

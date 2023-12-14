@@ -1,14 +1,11 @@
 <template>
     <div class="weekly-reports-container">
-      <SideMenu :items="reports" :item-key="'report'" @item-click="toggleReport" />
+      <SideMenu :items="reports" :item-key="'report'" />
       <main>
         <div class="divider"></div>
         <div v-for="(report, index) in reports" :key="index" :id="`report-${index + 1}`">
-          <Report :report="report" 
-          :fullPath="getReportPath(index + 1)" 
-          :isCollapsed="isReportCollapsed(index + 1)" 
-          @toggle-collapse="toggleReport(index + 1)" />
-          <div class="divider" :style="getDividerStyle(index + 1)"></div>
+          <Report :report="report" :fullPath="getReportPath(index + 1)" />
+          <div class="divider"></div>
         </div>
       </main>
     </div>
@@ -29,22 +26,20 @@ export default {
         return {
             reports: [
                 { 
-                    title: 'Week 1', 
+                    title: 'Assigment 1', 
                     content: [
-                      "Throughout this week, our team had the chance to break the ice and get to know each other, especially considering that it was the first meeting for most of us. Roles were defined, and we worked on assigning tasks among the team members.",
-                      "In our initial lab class, we focused on crafting our Hunt statement and honing in on the tasks and target audience for our chatbot. After some discussion, we settled on students and identified tasks related to budgeting and inflation, believing these topics would be particularly relevant for our chosen demographic.",
-                      "Additionally, we mapped out a user research plan based on initial interviews, setting the stage for defining our personas in the upcoming stages of our project."
+                      "<p>Custom HTML content with <strong>bold</strong> and <em>italic</em> text.</p><img src='your-image-url.jpg' alt='Image'>",
                     ]
                 },
                 { 
-                    title: 'Week 2', 
+                    title: 'Assigment 2', 
                     content: [
                       "In this week, the team embarked on the process of addressing challenges depicted in the storyboards through a comprehensive brainstorming session.",
                       "Ideas generated during this brainstorming were then organized into a mind map, forming cohesive groups. Once specific ideas were selected, they were further developed and illustrated through new storyboards, envisioning user interactions with the system and proposing solutions to financial issues.",
                     ]
                 },
                 { 
-                    title: 'Week 3', 
+                    title: 'Assigment 3', 
                     content: [
                       "Moving into this week, individual team members independently selected storyboards based on thematic groupings.",
                       "The team collectively envisioned the potential features of the application by sketching screens and integrating these diverse ideas.",
@@ -60,25 +55,6 @@ export default {
     methods: {
         getReportPath(index) {
             return `#report-${index}`;
-        },
-        toggleReport(reportId) {
-            const index = this.activeReports.indexOf(reportId);
-
-            if (index !== -1) {
-                // Report is active, remove it
-                this.activeReports.splice(index, 1);
-            } else {
-                // Report is not active, add it
-                this.activeReports.push(reportId);
-            }
-        },
-        isReportCollapsed(reportId) {
-            return this.activeReports.indexOf(reportId) === -1;
-        },
-        getDividerStyle(reportId) {
-            return {
-                transition: this.isReportCollapsed(reportId) ? 'transform 0.3s ease-in-out 0.3s' : 'transform 0.3s ease-in-out',
-            };
         },
     },
     mounted() {
