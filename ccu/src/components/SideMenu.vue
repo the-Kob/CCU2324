@@ -35,9 +35,15 @@ export default {
 
 <style scoped>
 .side-menu {
+  position: fixed;
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  height: 100vh; /* Full height */
+  overflow-y: auto;
   width: 200px;
   background-color: #f0f0f0;
   padding: 10px;
+  padding-top: 7rem;
   border-right: 1px solid #ccc; /* Add a border for separation */
 }
 

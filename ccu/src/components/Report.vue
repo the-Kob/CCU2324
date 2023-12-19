@@ -45,7 +45,7 @@ export default {
   transform-origin: center top;
 }
 
-.justified-text {
+.content {
   text-align: justify;
 }
 </style>

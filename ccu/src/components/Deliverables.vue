@@ -80,7 +80,7 @@ export default {
 }
 
 main {
-  margin-left: 20px;
+  margin-left: 300px;
   flex: 1; /* Use flex to take up remaining space */
 }
 

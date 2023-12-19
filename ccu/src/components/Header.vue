@@ -5,7 +5,7 @@
     <nav>
         <ul>
         <li><router-link to="/CCU2324/deliverables">Deliverables</router-link></li>
-        <li><router-link to="/CCU2324/weekly-reports">Assignment Reports</router-link></li>
+        <li><router-link to="/CCU2324/weekly-reports">Reports</router-link></li>
         </ul>
     </nav>
     </div>
@@ -20,6 +20,8 @@ export default {
 
 <style scoped>
 header {
+    position: relative;
+    z-index: 10;
     background-color: #333;
     color: #fff;
     padding: 1rem;
