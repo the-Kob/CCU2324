@@ -15,24 +15,24 @@
 import Report from '@/components/Report.vue';
 import SideMenu from '@/components/SideMenu.vue';
 
-import Image1 from '@/assets/ass1/Imagem1.png';
-import Image2 from '@/assets/ass1/Imagem2.png';
-import Image3 from '@/assets/ass1/Imagem3.png';
-import Image4 from '@/assets/ass1/Imagem4.png';
-import Image5 from '@/assets/ass1/Imagem5.png';
-import Image6 from '@/assets/ass1/Imagem6.png';
-import Image7 from '@/assets/ass1/Imagem7.png';
-import Image8 from '@/assets/ass1/Imagem8.png';
-import Image9 from '@/assets/ass1/Imagem9.png';
-import Image10 from '@/assets/ass1/Imagem10.png';
-import Image11 from '@/assets/ass2/Imagem11.jpg';
-import Image12 from '@/assets/ass2/Imagem12.jpg';
-import Image13 from '@/assets/ass2/Imagem13.jpg';
-import Image14 from '@/assets/ass2/Imagem14.png';
-import Image15 from '@/assets/ass2/Imagem15.jpg';
-import Image16 from '@/assets/ass2/Imagem16.jpg';
-import Image17 from '@/assets/ass2/Imagem17.jpg';
-import Image18 from '@/assets/ass2/Imagem18.png';
+import Image1 from '@/assets/Imagem1.png';
+import Image2 from '@/assets/Imagem2.png';
+import Image3 from '@/assets/Imagem3.png';
+import Image4 from '@/assets/Imagem4.png';
+import Image5 from '@/assets/Imagem5.png';
+import Image6 from '@/assets/Imagem6.png';
+import Image7 from '@/assets/Imagem7.png';
+import Image8 from '@/assets/Imagem8.png';
+import Image9 from '@/assets/Imagem9.png';
+import Image10 from '@/assets/Imagem10.png';
+import Image11 from '@/assets/Imagem11.jpg';
+import Image12 from '@/assets/Imagem12.jpg';
+import Image13 from '@/assets/Imagem13.jpg';
+import Image14 from '@/assets/Imagem14.png';
+import Image15 from '@/assets/Imagem15.jpg';
+import Image16 from '@/assets/Imagem16.jpg';
+import Image17 from '@/assets/Imagem17.jpg';
+import Image18 from '@/assets/Imagem18.png';
 
 export default {
     components: {
