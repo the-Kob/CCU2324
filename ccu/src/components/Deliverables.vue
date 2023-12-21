@@ -53,6 +53,19 @@ export default {
             'Please download the presentation slides below.',
           ]
         },
+        {
+          downloadLink: 'https://drive.google.com/uc?export=download&id=1bfZ8V6xKF_Q4gA32cO9KcZPDrQK18AaL',
+          title: 'Assignment 3',
+          content: [
+            {
+              type: 'video',
+              videoSrc: 'https://www.youtube.com/embed/FW3VEPu2-zM',
+            },
+          ],
+          description: [
+            'Please download the presentation slides below.',
+          ]
+        },
       ],
     };
   },
