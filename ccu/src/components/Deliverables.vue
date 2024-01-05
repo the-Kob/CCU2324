@@ -55,7 +55,7 @@ export default {
         },
         {
           downloadLink: 'https://drive.google.com/uc?export=download&id=1bfZ8V6xKF_Q4gA32cO9KcZPDrQK18AaL',
-          title: 'Assignment 3',
+          title: 'Assignmen 3',
           content: [
             {
               type: 'video',
@@ -64,6 +64,14 @@ export default {
           ],
           description: [
             'Please download the presentation slides below.',
+          ]
+        },
+        {
+          downloadLink: 'https://drive.google.com/uc?export=download&id=1mOp54towar_KcEW190xrYOlnfV1TK12R',
+          title: 'Final Report',
+          content: [],
+          description: [
+            'Please download the final report below.',
           ]
         },
       ],

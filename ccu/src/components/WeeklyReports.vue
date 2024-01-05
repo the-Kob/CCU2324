@@ -33,6 +33,12 @@ import Image15 from '@/assets/Imagem15.jpg';
 import Image16 from '@/assets/Imagem16.jpg';
 import Image17 from '@/assets/Imagem17.jpg';
 import Image18 from '@/assets/Imagem18.png';
+import Image19 from '@/assets/Imagem19.png';
+import Image20 from '@/assets/Imagem20.png';
+import Image21 from '@/assets/Imagem21.png';
+import Image22 from '@/assets/Imagem22.png';
+import Image23 from '@/assets/Imagem23.png';
+import Image24 from '@/assets/Imagem24.png';
 
 export default {
     components: {
@@ -127,12 +133,40 @@ export default {
                 },
                 { 
                     title: 'Assigment 3', 
-                    content: [
-                      "Moving into this week, individual team members independently selected storyboards based on thematic groupings.",
-                      "The team collectively envisioned the potential features of the application by sketching screens and integrating these diverse ideas.",
-                      "This amalgamation of concepts served as the foundation for the creation of a Low-Fidelity prototype. Tasks that users might perform were envisioned to anticipate the ways in which the app could assist them.",
-                      "Utilizing paper and post-it notes, a prototype was crafted to enable user interaction. Subsequent user evaluations were conducted using the Wizard of Oz and Think Aloud methods, providing valuable insights for improvement.",
-                      "Once potential issues were identified, the team transitioned to Figma to develop the Mid-Fidelity prototype, incorporating refined design elements and enhanced functionality.",
+                    content: [`
+                      <div>
+                        <p>Over the last two weeks we have been working on the high-fi prototype using Figma. To this end, we took care to integrate our user feedback obtained in user testing regarding mid-fi.</p>
+                        <img src="${Image19}" alt='User Feedback Integration'>
+
+                        <p>This gave rise to a first iteration of our high-fidelity prototype considering the material design guidelines, which is presented below in an overview.</p>
+                        <img src="${Image20}" alt='High-Fi Prototype Overview'>
+
+                        <p>It was therefore important to carry out user testing of this prototype and as such we created a plan:</p>
+                        <ul>
+                            <li>At least 5 users with their first contact with the chatbot;</li>
+                            <li>Online/In-person;</li>
+                            <li>Think Aloud and AttrakDiff;</li>
+                            <li>All the previous ones with an additional focus on the new functionalities.</li>
+                        </ul>
+
+                        <p>As expected, the tests provided valuable insights. They were carried out with 7 users.</p>
+                        <p>Starting with Think Aloud, the main conclusions were as follows:</p>
+                        <ul>
+                            <li>The pin button is too subtle; consider adding a confirmation prompt or enabling automatic redirection to the home page upon correct pin entry.</li>
+                            <li>Consider using a red shade as the primary color for the app to better align with Santander's branding.</li>
+                            <li>The home button should have a fixed position on the screen.</li>
+                            <li>Since the history is already logged in the "More Options" section, it may not be necessary to include a search bar.</li>
+                        </ul>
+
+                        <p>Regarding AttrakDiff, we present the results obtained below.</p>
+                        <img src="${Image21}" alt='AttrakDiff Result 1'>
+                        <img src="${Image22}" alt='AttrakDiff Result 2'>
+                        <img src="${Image23}" alt='AttrakDiff Result 3'>
+
+                        <p>Although positive, there is room for improvement, which motivated us to start a second iteration of our prototype where we review the design again based on user feedback.</p>
+                        <img src="${Image24}" alt='Second Iteration Prototype'>
+                      </div>
+                    `
                     ]
                 }
             ],
