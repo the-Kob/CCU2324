@@ -55,7 +55,7 @@ export default {
         },
         {
           downloadLink: 'https://drive.google.com/uc?export=download&id=1bfZ8V6xKF_Q4gA32cO9KcZPDrQK18AaL',
-          title: 'Assignmen 3',
+          title: 'Assignment 3',
           content: [
             {
               type: 'video',
